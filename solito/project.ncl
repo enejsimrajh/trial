@@ -2,14 +2,18 @@ let inputs = import "./nickel.lock.ncl" in
 let organist = inputs.organist in
 
 {
-  shells = organist.shells.Javascript,
+  shells = organist.shells.Bash,
 
   shells.build = {
-    packages = {},
+    packages = {
+      bun = organist.import_nix "nixpkgs#bun"
+    },
   },
 
   shells.dev = {
-    packages = {},
+    packages = {
+      ts-lsp = organist.import_nix "nixpkgs#nodePackages_latest.typescript-language-server",
+    },
   },
 }
   | (
