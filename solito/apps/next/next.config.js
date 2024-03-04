@@ -9,14 +9,15 @@ const nextConfig = {
   // once that gets fixed, set this back to true
   reactStrictMode: false,
   transpilePackages: [
+    'app',
+    'moti',
+    'nativewind',
     'react-native',
+    'react-native-css-interop',
+    'react-native-gesture-handler',
+    'react-native-reanimated',
     'react-native-web',
     'solito',
-    'moti',
-    'app',
-    'react-native-reanimated',
-    'nativewind',
-    'react-native-gesture-handler',
   ],
 }
 

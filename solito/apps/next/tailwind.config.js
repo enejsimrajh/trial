@@ -4,6 +4,7 @@ const { theme } = require('app/design/tailwind/theme')
 module.exports = {
   content: [
     './pages/**/*.{js,jsx,ts,tsx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
     '../../packages/**/*.{js,jsx,ts,tsx}',
   ],
   plugins: [require('nativewind/tailwind/css')],
