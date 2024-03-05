@@ -5,6 +5,7 @@ import {
   XCircle,
   MoonStar,
   Sun,
+  Info,
 } from "lucide-react-native";
 import { cssInterop } from "nativewind";
 
@@ -25,5 +26,6 @@ interopIcon(CheckCircle);
 interopIcon(XCircle);
 interopIcon(MoonStar);
 interopIcon(Sun);
+interopIcon(Info);
 
-export { AlertCircle, CheckCircle, XCircle, MoonStar, Sun };
+export { AlertCircle, CheckCircle, XCircle, MoonStar, Sun, Info };
